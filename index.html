@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Collective Plant</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="/socket.io/socket.io.js"></script>
+</head>
+
+<body>
+
+  <main>
+    <div class="scene-wrap">
+      <div class="scene">
+
+        <!-- Table -->
+        <div class="table"></div>
+
+        <!-- Vase -->
+        <div class="vase"></div>
+        <div class="stem s1"></div>
+        <div class="stem s2"></div>
+        <div class="flower f1"></div>
+        <div class="flower f2"></div>
+
+        <!-- Television -->
+        <div class="tv">
+
+          <!-- Screen -->
+          <div class="screen" id="screen">
+
+            <div class="sky"></div>
+            <div class="hill"></div>
+
+            <!-- Plant -->
+            <div class="screen-plant" id="plant">
+
+              <div class="screen-flower">
+                <div class="screen-petal sp1"></div>
+                <div class="screen-petal sp2"></div>
+                <div class="screen-petal sp3"></div>
+                <div class="screen-petal sp4"></div>
+                <div class="screen-center"></div>
+              </div>
+
+              <div class="screen-stem"></div>
+              <div class="screen-leaf leaf-left"></div>
+              <div class="screen-leaf leaf-right"></div>
+
+            </div>
+
+            <!-- Pot -->
+            <div class="screen-pot"></div>
+
+          </div>
+
+          <!-- TV buttons -->
+          <div class="button b1"></div>
+          <div class="button b2"></div>
+
+          <!-- Water button -->
+          <button
+            class="knob"
+            id="waterButton"
+            aria-label="Water the plant">
+          </button>
+
+        </div>
+
+        <!-- Tapes -->
+        <div class="tape t1"></div>
+        <div class="tape t2"></div>
+        <div class="case"></div>
+
+      </div>
+    </div>
+  </main>
+
+  <script src="sketch.js"></script>
+
+</body>
+
+</html>

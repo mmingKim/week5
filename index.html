@@ -13,71 +13,48 @@
 
 <body>
 
-  <main>
-    <div class="scene-wrap">
-      <div class="scene">
+  <main class="garden">
 
-        <!-- Table -->
-        <div class="table"></div>
+    <h1>Collective Plant</h1>
 
-        <!-- Vase -->
-        <div class="vase"></div>
-        <div class="stem s1"></div>
-        <div class="stem s2"></div>
-        <div class="flower f1"></div>
-        <div class="flower f2"></div>
+    <p class="instructions">
+      Water the plant together.
+    </p>
 
-        <!-- Television -->
-        <div class="tv">
+    <div class="window">
 
-          <!-- Screen -->
-          <div class="screen" id="screen">
+      <div class="sun"></div>
 
-            <div class="sky"></div>
-            <div class="hill"></div>
+      <div class="plant" id="plant">
 
-            <!-- Plant -->
-            <div class="screen-plant" id="plant">
-
-              <div class="screen-flower">
-                <div class="screen-petal sp1"></div>
-                <div class="screen-petal sp2"></div>
-                <div class="screen-petal sp3"></div>
-                <div class="screen-petal sp4"></div>
-                <div class="screen-center"></div>
-              </div>
-
-              <div class="screen-stem"></div>
-              <div class="screen-leaf leaf-left"></div>
-              <div class="screen-leaf leaf-right"></div>
-
-            </div>
-
-            <!-- Pot -->
-            <div class="screen-pot"></div>
-
-          </div>
-
-          <!-- TV buttons -->
-          <div class="button b1"></div>
-          <div class="button b2"></div>
-
-          <!-- Water button -->
-          <button
-            class="knob"
-            id="waterButton"
-            aria-label="Water the plant">
-          </button>
-
+        <div class="plant-flower">
+          <div class="petal p1"></div>
+          <div class="petal p2"></div>
+          <div class="petal p3"></div>
+          <div class="petal p4"></div>
+          <div class="flower-center"></div>
         </div>
 
-        <!-- Tapes -->
-        <div class="tape t1"></div>
-        <div class="tape t2"></div>
-        <div class="case"></div>
+        <div class="plant-stem"></div>
+
+        <div class="leaf leaf-left"></div>
+        <div class="leaf leaf-right"></div>
 
       </div>
+
+      <div class="pot"></div>
+      <div class="ground"></div>
+
     </div>
+
+    <button id="waterButton">
+      Water 💧
+    </button>
+
+    <p id="plantMessage">
+      The plant is waiting for water.
+    </p>
+
   </main>
 
   <script src="sketch.js"></script>
